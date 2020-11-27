@@ -1,6 +1,6 @@
 # firebase_ddd
 
-A new Flutter project.
+Android Flutter Note app with DDD architecture with Firebase backend.
 
 ## Getting Started
 
