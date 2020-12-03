@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
-import 'package:firebase_ddd/domain/core/errors.dart';
 import 'package:flutter/foundation.dart';
 
+import 'errors.dart';
 import 'failures.dart';
 
 @immutable

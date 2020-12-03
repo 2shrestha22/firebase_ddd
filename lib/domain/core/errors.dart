@@ -1,4 +1,4 @@
-import 'package:firebase_ddd/domain/core/failures.dart';
+import 'failures.dart';
 
 class UnexpectedValureError extends Error {
   final ValueFailure valueFailure;
