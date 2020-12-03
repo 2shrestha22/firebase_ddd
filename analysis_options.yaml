@@ -1,0 +1,10 @@
+include: package:pedantic/analysis_options.yaml
+
+linter:
+  rules:
+    - prefer_const_constructors
+analyzer:
+  errors:
+    missing_required_param: error
+    missing_return: error
+    must_be_immutable: error
