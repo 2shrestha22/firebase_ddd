@@ -10,12 +10,12 @@ part of 'user.dart';
 T _$identity<T>(T value) => value;
 
 /// @nodoc
-class _$UserTearOff {
-  const _$UserTearOff();
+class _$AppUserTearOff {
+  const _$AppUserTearOff();
 
 // ignore: unused_element
-  _User call({@required UniqueId id}) {
-    return _User(
+  _AppUser call({@required UniqueId id}) {
+    return _AppUser(
       id: id,
     );
   }
@@ -23,29 +23,29 @@ class _$UserTearOff {
 
 /// @nodoc
 // ignore: unused_element
-const $User = _$UserTearOff();
+const $AppUser = _$AppUserTearOff();
 
 /// @nodoc
-mixin _$User {
+mixin _$AppUser {
   UniqueId get id;
 
-  $UserCopyWith<User> get copyWith;
+  $AppUserCopyWith<AppUser> get copyWith;
 }
 
 /// @nodoc
-abstract class $UserCopyWith<$Res> {
-  factory $UserCopyWith(User value, $Res Function(User) then) =
-      _$UserCopyWithImpl<$Res>;
+abstract class $AppUserCopyWith<$Res> {
+  factory $AppUserCopyWith(AppUser value, $Res Function(AppUser) then) =
+      _$AppUserCopyWithImpl<$Res>;
   $Res call({UniqueId id});
 }
 
 /// @nodoc
-class _$UserCopyWithImpl<$Res> implements $UserCopyWith<$Res> {
-  _$UserCopyWithImpl(this._value, this._then);
+class _$AppUserCopyWithImpl<$Res> implements $AppUserCopyWith<$Res> {
+  _$AppUserCopyWithImpl(this._value, this._then);
 
-  final User _value;
+  final AppUser _value;
   // ignore: unused_field
-  final $Res Function(User) _then;
+  final $Res Function(AppUser) _then;
 
   @override
   $Res call({
@@ -58,48 +58,48 @@ class _$UserCopyWithImpl<$Res> implements $UserCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$UserCopyWith<$Res> implements $UserCopyWith<$Res> {
-  factory _$UserCopyWith(_User value, $Res Function(_User) then) =
-      __$UserCopyWithImpl<$Res>;
+abstract class _$AppUserCopyWith<$Res> implements $AppUserCopyWith<$Res> {
+  factory _$AppUserCopyWith(_AppUser value, $Res Function(_AppUser) then) =
+      __$AppUserCopyWithImpl<$Res>;
   @override
   $Res call({UniqueId id});
 }
 
 /// @nodoc
-class __$UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res>
-    implements _$UserCopyWith<$Res> {
-  __$UserCopyWithImpl(_User _value, $Res Function(_User) _then)
-      : super(_value, (v) => _then(v as _User));
+class __$AppUserCopyWithImpl<$Res> extends _$AppUserCopyWithImpl<$Res>
+    implements _$AppUserCopyWith<$Res> {
+  __$AppUserCopyWithImpl(_AppUser _value, $Res Function(_AppUser) _then)
+      : super(_value, (v) => _then(v as _AppUser));
 
   @override
-  _User get _value => super._value as _User;
+  _AppUser get _value => super._value as _AppUser;
 
   @override
   $Res call({
     Object id = freezed,
   }) {
-    return _then(_User(
+    return _then(_AppUser(
       id: id == freezed ? _value.id : id as UniqueId,
     ));
   }
 }
 
 /// @nodoc
-class _$_User implements _User {
-  const _$_User({@required this.id}) : assert(id != null);
+class _$_AppUser implements _AppUser {
+  const _$_AppUser({@required this.id}) : assert(id != null);
 
   @override
   final UniqueId id;
 
   @override
   String toString() {
-    return 'User(id: $id)';
+    return 'AppUser(id: $id)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _User &&
+        (other is _AppUser &&
             (identical(other.id, id) ||
                 const DeepCollectionEquality().equals(other.id, id)));
   }
@@ -109,15 +109,15 @@ class _$_User implements _User {
       runtimeType.hashCode ^ const DeepCollectionEquality().hash(id);
 
   @override
-  _$UserCopyWith<_User> get copyWith =>
-      __$UserCopyWithImpl<_User>(this, _$identity);
+  _$AppUserCopyWith<_AppUser> get copyWith =>
+      __$AppUserCopyWithImpl<_AppUser>(this, _$identity);
 }
 
-abstract class _User implements User {
-  const factory _User({@required UniqueId id}) = _$_User;
+abstract class _AppUser implements AppUser {
+  const factory _AppUser({@required UniqueId id}) = _$_AppUser;
 
   @override
   UniqueId get id;
   @override
-  _$UserCopyWith<_User> get copyWith;
+  _$AppUserCopyWith<_AppUser> get copyWith;
 }

@@ -5,8 +5,8 @@ import '../core/value_object.dart';
 part 'user.freezed.dart';
 
 @freezed
-abstract class User with _$User {
-  const factory User({
+abstract class AppUser with _$AppUser {
+  const factory AppUser({
     @required UniqueId id,
-  }) = _User;
+  }) = _AppUser;
 }

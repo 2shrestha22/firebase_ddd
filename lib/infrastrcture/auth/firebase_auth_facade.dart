@@ -5,7 +5,7 @@ import 'package:injectable/injectable.dart';
 
 import '../../domain/auth/auth_failure.dart';
 import '../../domain/auth/i_auth_facade.dart';
-import '../../domain/auth/user.dart' as appUser;
+import '../../domain/auth/user.dart';
 import '../../domain/auth/value_objects.dart';
 import 'firebase_user_mapper.dart';
 
@@ -20,7 +20,7 @@ class FirebaseAuthFacade implements IAuthFacade {
   );
 
   @override
-  Future<Option<appUser.User>> getSignedInUser() async {
+  Future<Option<AppUser>> getSignedInUser() async {
     return optionOf(_firebaseAuth.currentUser?.toDomain());
   }
 

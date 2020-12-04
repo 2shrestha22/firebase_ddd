@@ -8,7 +8,7 @@ import 'value_objects.dart';
 //FirebaseAuth and GogleSignin
 
 abstract class IAuthFacade {
-  Future<Option<User>> getSignedInUser();
+  Future<Option<AppUser>> getSignedInUser();
 
   Future<Either<AuthFailure, Unit>> registerWithEmailAndPassword({
     @required EmailAddress emailAddress,

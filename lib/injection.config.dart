@@ -12,7 +12,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 import 'infrastrcture/auth/firebase_auth_facade.dart';
 import 'infrastrcture/core/firebase_injectable_module.dart';
 import 'domain/auth/i_auth_facade.dart';
-import 'application/auth/sign_in_form_bloc.dart';
+import 'application/auth/sign_in_form/sign_in_form_bloc.dart';
 
 /// adds generated dependencies
 /// to the provided [GetIt] instance
