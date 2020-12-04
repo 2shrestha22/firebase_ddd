@@ -1,8 +1,9 @@
-import 'package:firebase_ddd/application/auth/sign_in_form_bloc.dart';
 import 'package:flushbar/flushbar_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../application/auth/sign_in_form_bloc.dart';
 
 class SignInForm extends StatelessWidget {
   @override
@@ -14,8 +15,6 @@ class SignInForm extends StatelessWidget {
           () {},
           (either) => either.fold(
             (failure) {
-              print('object');
-
               FlushbarHelper.createError(
                 message: failure.map(
                   cancelledByUser: (_) => 'Cancelled',
