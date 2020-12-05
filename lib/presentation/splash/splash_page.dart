@@ -13,8 +13,6 @@ class SplashPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocListener<AuthBloc, AuthState>(
       listener: (context, state) {
-        print('sljflsl');
-
         state.map(
             initial: (_) {},
             authenticated: (_) {

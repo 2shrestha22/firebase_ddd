@@ -19,7 +19,7 @@ abstract class ValueObject<T> {
   ///must not have so we terminate the app.
   T getOrCrash() {
     return value.fold(
-        //id is same as writing (right) => right
+        //[id] is same as writing (right) => right
         (valueFailure) => throw UnexpectedValureError(valueFailure),
         id);
   }
