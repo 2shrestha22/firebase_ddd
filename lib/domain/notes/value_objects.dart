@@ -1,11 +1,12 @@
 import 'dart:ui';
 
 import 'package:dartz/dartz.dart';
-import 'package:firebase_ddd/domain/core/failures.dart';
-import 'package:firebase_ddd/domain/core/value_object.dart';
-import 'package:firebase_ddd/domain/core/value_transformer.dart';
-import 'package:firebase_ddd/domain/core/value_validators.dart';
 import 'package:kt_dart/collection.dart';
+
+import '../core/failures.dart';
+import '../core/value_object.dart';
+import '../core/value_transformer.dart';
+import '../core/value_validators.dart';
 
 class NoteBody extends ValueObject<String> {
   static const maxLength = 1000;

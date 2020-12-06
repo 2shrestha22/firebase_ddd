@@ -1,10 +1,11 @@
 import 'package:dartz/dartz.dart';
-import 'package:firebase_ddd/domain/core/failures.dart';
-import 'package:firebase_ddd/domain/core/value_object.dart';
-import 'package:firebase_ddd/domain/notes/todo_item.dart';
-import 'package:firebase_ddd/domain/notes/value_objects.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:kt_dart/collection.dart';
+
+import '../core/failures.dart';
+import '../core/value_object.dart';
+import 'todo_item.dart';
+import 'value_objects.dart';
 
 part 'note.freezed.dart';
 
